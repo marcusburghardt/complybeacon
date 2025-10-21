@@ -3,5 +3,6 @@ plugins:
     evaluations-dir: "/sampledata/evaluations"
 
 certConfig:
+  #ca: /certs/my-ca.crt
   cert: /certs/compass.crt
   key:  /certs/compass.key
