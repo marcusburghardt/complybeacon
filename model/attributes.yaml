@@ -71,7 +71,7 @@ groups:
               stability: development
         stability: development
         brief: >
-          Result of the policy evaluation: Not Run, Passed, Failed, Needs Review, Not Applicable, or Unknown.
+          Outcome of the policy rule evaluation, indicating the result of the policy check.
         requirement_level: required
       - id: policy.evaluation.message
         type: string
@@ -188,7 +188,7 @@ groups:
               stability: development
         stability: development
         brief: >
-          Compliance verdict: Compliant, Non-Compliant, Exempt, Not Applicable, or Unknown.
+          Overall compliance determination for the assessed resource or control, indicating whether it meets the compliance requirements.
         requirement_level: required
       - id: compliance.risk.level
         type:
@@ -215,7 +215,7 @@ groups:
               stability: development
         stability: development
         brief: >
-          Risk level associated with non-compliance: Critical, High, Medium, Low, or Informational.
+          Severity classification of the risk posed by non-compliance with the control requirement.
         requirement_level: opt_in
       - id: compliance.remediation.action
         type:
@@ -246,7 +246,7 @@ groups:
               stability: development
         stability: development
         brief: >
-          Action taken by the policy engine: Block, Allow, Remediate, Waive, Notify, or Unknown.
+          Remediation action determined by the policy engine in response to the compliance assessment result.
         requirement_level: opt_in
       - id: compliance.remediation.status
         type:
@@ -269,7 +269,7 @@ groups:
               stability: development
         stability: development
         brief: >
-          Result of the policy enforcement action.
+          Outcome of the remediation action execution, indicating whether the remediation was successfully applied.
         requirement_level: opt_in
       - id: compliance.remediation.exception.id
         type: string
@@ -328,5 +328,5 @@ groups:
               stability: development
         stability: development
         brief: >
-          Status of the compliance enrichment process: Success, Unmapped, Partial, Unknown, or Skipped.
+          Result of the compliance framework mapping and enrichment process, indicating whether compliance context was successfully added to the event.
         requirement_level: required
